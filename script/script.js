@@ -22,7 +22,7 @@ const render = function(){
         '</div>';
 
         if(item.completed){
-            todoComplited.append(li);
+            todoCompleted.append(li);
         } else {
             todoList.append(li);
         }
@@ -32,7 +32,7 @@ const render = function(){
         btnTodoCompleted.addEventListener('click', function(){
             item.completed = !item.completed;
             render();
-        })
+        });
     });
 };
 
